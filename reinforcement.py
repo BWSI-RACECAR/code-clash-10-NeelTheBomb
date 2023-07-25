@@ -4,9 +4,10 @@ class Solution:
             #return type: int dictionary
             Dict = {}
             for i in range(num_actions**num_actions):
-                Dict[i] = ()
+                Dict[i] = []
                 for j in range(num_players):
-                    Dict[i] += tuple(i // (num_actions**j) %num_actions)
+                    Dict[i].append(i // (num_actions**j) %num_actions)
+                    Dict[i] = tuple(Dict[i])
                 Dict[Dict[i]] = i
             return Dict
             
