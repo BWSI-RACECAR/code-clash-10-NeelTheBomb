@@ -8,7 +8,7 @@ class Solution:
                 for j in range((num_actions)):
                     count = count + 1
                     tup = ()
-                    for b in range(len(num_players)):
+                    for b in range((num_players)):
                         tup = tup + 0
                     tup[i] = j
                     print(tup)
