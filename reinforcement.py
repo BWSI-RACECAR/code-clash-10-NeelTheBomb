@@ -7,7 +7,7 @@ class Solution:
                 Dict[i] = []
                 for j in range(num_players):
                     Dict[i].append(i // (num_actions**j) %num_actions)
-                    Dict[i] = tuple(Dict[i])
+                Dict[i] = tuple(Dict[i])
                 Dict[Dict[i]] = i
             return Dict
             
