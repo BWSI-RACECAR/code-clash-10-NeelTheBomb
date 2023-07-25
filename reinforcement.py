@@ -3,7 +3,7 @@ class Solution:
             #type num: two integer values
             #return type: int dictionary
             Dict = {}
-            for i in range(num_actions**num_actions):
+            for i in range(num_players**num_actions):
                 #Dict[i] = [ ]
                 li = []
                 for j in range(num_players):
