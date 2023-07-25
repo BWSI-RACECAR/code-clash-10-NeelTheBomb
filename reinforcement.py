@@ -9,7 +9,7 @@ class Solution:
                     count = count + 1
                     tup = ()
                     for b in range((num_players)):
-                        tup = tup + 0
+                        tup = tup + (0)
                     tup[i] = j
                     print(tup)
                     Dict[count] = tup
