@@ -4,8 +4,8 @@ class Solution:
             #return type: int dictionary
             Dict = {}
             count = 0
-            for i in range(len(num_players)):
-                for j in range(len(num_actions)):
+            for i in range((num_players)):
+                for j in range((num_actions)):
                     count = count + 1
                     tup = ()
                     for b in range(len(num_players)):
@@ -13,6 +13,8 @@ class Solution:
                     tup[i] = j
                     print(tup)
                     Dict[count] = tup
+            print(Dict)
+            return Dict
                     
                          
             
