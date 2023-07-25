@@ -3,7 +3,7 @@ class Solution:
             #type num: two integer values
             #return type: int dictionary
             Dict = {}
-            for i in range(num_actions**num_actions):
+            for i in range(num_players**num_actions*num_players):
                 Dict[i] = []
                 for j in range(num_players):
                     Dict[i].append(i // (num_actions**j) %num_actions)
