@@ -3,21 +3,12 @@ class Solution:
             #type num: two integer values
             #return type: int dictionary
             Dict = {}
-            count = 0
-            for i in range((num_players)):
-                tup = ()
-                for j in range((num_actions)):
-                    count = count + 1
-                    tup = tup + (j)
-                    # for b in range((num_players)-1):
-                    #     tup = tup + (0)
-                    # tup[i] = j
-                    print(tup)
-                    Dict[count] = tup
-            print(Dict)
+            for i in range(num_actions**num_actions):
+                Dict[i] = ()
+                for j in range(num_players):
+                    Dict[i] += (i // (num_actions**j) %num_actions)
+                Dict[Dict[i]] = i
             return Dict
-                    
-                         
             
             #TODO: Write code below to return a dictionary with the solution to the prompt.
             pass
