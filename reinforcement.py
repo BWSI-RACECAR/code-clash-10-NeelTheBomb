@@ -6,7 +6,7 @@ class Solution:
             for i in range(num_actions**num_actions):
                 Dict[i] = ()
                 for j in range(num_players):
-                    Dict[i] += (i // (num_actions**j) %num_actions)
+                    Dict[i] += ((i // (num_actions**j) %num_actions))
                 Dict[Dict[i]] = i
             return Dict
             
