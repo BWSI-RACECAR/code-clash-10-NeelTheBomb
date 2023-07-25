@@ -5,12 +5,13 @@ class Solution:
             Dict = {}
             count = 0
             for i in range((num_players)):
+                tup = ()
                 for j in range((num_actions)):
                     count = count + 1
-                    tup = (0)
-                    for b in range((num_players)-1):
-                        tup = tup + (0)
-                    tup[i] = j
+                    tup = tup + (j)
+                    # for b in range((num_players)-1):
+                    #     tup = tup + (0)
+                    # tup[i] = j
                     print(tup)
                     Dict[count] = tup
             print(Dict)
